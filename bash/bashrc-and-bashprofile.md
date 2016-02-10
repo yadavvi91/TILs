@@ -1,4 +1,4 @@
-Difference between `.bashrc` and `.bash_profile`
+`.bashrc` and `.bash_profile` in Linux
 ======
 
 
