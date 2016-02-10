@@ -2,7 +2,7 @@ The substitute command of VIM.
 ===
 
 `:substitute` or `:s` or `:su` is used to substitute *i.e.* search and replace
-for files in an opened file in vim.
+for files in an opened file in VIM.
 
 To open help about `:substitute` in VIM use - 
 ```bash
