@@ -4,20 +4,26 @@ Copy and Paste to the System Clipboard
 We sometimes need to copy and paste text to the System Clipboard from and to ***vim***.
 The `"` register of ***vim*** can be used for this.
 
-####Copying from vim to the System Clipboard
+#### Copying from vim to the System Clipboard
 
 When using an `X11 System` like Linux, to copy text to the ***System Clipboard***,
 do the following thing -
 
  * Enter in the Normal mode (i.e. if in any mode like `insert` etc. press `Esc`).
  * Move the cursor to the point where you want to copy.
- * Enter the following command - 
+ * Enter the following command -
 
    ```vim
    "+2yy
    ```
    to copy 2 lines from the cursor to the system clipboard.
-   
+   ***OR***
+
+   ```vim
+   "+yw
+   ```
+   to copy one word from the cursor to the clipboard.
+
 If we want to ***visually select text*** and then copy to the clipboard we can do this -
 
  * Enter in the Normal mode (i.e. if in any mode like `insert` etc. press `Esc`).
@@ -32,14 +38,24 @@ If we want to ***visually select text*** and then copy to the clipboard we can d
 Now, the lines that were selected are copied to the clipboard.
 
 
-####Pasting from System Clipboard to VIM
+#### Pasting from System Clipboard to VIM
 
-To paste text *from* ***System Clipboard*** *to* ***VIM*** follow these steps - 
+To paste text *from* ***System Clipboard*** *to* ***VIM*** follow these steps -
 
  * Enter in the Normal mode (i.e. if in any mode like `insert` etc. press `Esc`).
  * Move the cursor to the point where you want to paste.
- * Enter the following command - 
- 
+ * Enter the following command -
+
    ```vim
    "+p
    ```
+
+---
+
+#### NOTE
+
+If text is copied to the system clipboard, the text can be pasted anywhere ***ONLY***
+when the `VIM` instance is still running. If the `VIM` instance is killed via `:wq` or `:q`
+OR it goes to the background via `Ctrl-z`, the paste option will not work.
+
+
