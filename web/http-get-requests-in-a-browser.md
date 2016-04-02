@@ -44,3 +44,7 @@ This shows the different files/URLs that need to be downloaded along with the HT
 that was given by the browser on the `GET` request of the HTML page.
 
 ![image](assets/Source_Of_The_HTMLPage.png)
+
+
+**NOTE**: Read [this](http://stackoverflow.com/questions/1795438/load-and-execution-sequence-of-a-web-page)
+ for further explanations on how the browser renders images and css and other things.
