@@ -10,19 +10,23 @@ or more occurrences.
 *for e.g.* -
 
 to delete all the trailing whitespace (at the end of each line) -
+
 ```vim
 :%s/\s\+$//
 ```
+
 Here, the `$` is an anchor for the end of line. So, all the whitespace
 characters at the end of the line are matched by `\s\+$`.
 
 Since we are replacing the whitespace characters with nothing,
 we can even omit the substitution as follows -
-````vim
+
+```vim
 :%s/\s\+$
 ```
 
 Similarly, to delete the leading whitespace at the beginning of each line -
+
 ```vim
 :%s/^\s\+
 ```
